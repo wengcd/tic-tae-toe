@@ -1,0 +1,41 @@
+.square {
+  background: transparent;
+  border: 12px solid #0da192;
+  float: left;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 150px;
+  height: 150px;
+  margin-right: -12px;
+  margin-top: -12px;
+  padding: 0;
+  text-align: center;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &.X {
+    color: rgb(84, 84, 84);
+  }
+
+  &.O {
+    color: rgb(242, 235, 211);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .square {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-width: 9px;
+    margin-top: -9px;
+    margin-right: -9px;
+  }
+}
