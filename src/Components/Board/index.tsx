@@ -50,6 +50,8 @@ const Board = (): JSX.Element => {
     let status = '';
     if (winner) {
       status = `Winner: ${winner}!`;
+    } else if (!squares.includes(null)) {
+      status = 'Draw!';
     } else {
       status = `Next Player: ${xIsNext ? 'X' : 'O'}`;
     }
